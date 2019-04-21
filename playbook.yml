@@ -1,0 +1,5 @@
+---
+- hosts: all
+  roles:
+      - { role: base_configs }
+      - { role: desktop_configs }
