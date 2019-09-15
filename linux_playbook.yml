@@ -1,0 +1,9 @@
+---
+- hosts: all
+  roles:
+      - { role: linux_desktop, ansible_python_interpreter: /usr/bin/python3 }
+      - { role: libvirt, ansible_python_interpreter: /usr/bin/python3 }
+      - { role: vagrant, ansible_python_interpreter: /usr/bin/python3 }
+      - { role: base_configs }
+      - { role: desktop_configs }
+      - { role: linux_configs }
