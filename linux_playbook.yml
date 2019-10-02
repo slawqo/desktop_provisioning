@@ -6,3 +6,5 @@
       - { role: base_configs }
       - { role: desktop_configs }
       - { role: linux_configs }
+      - { role: fzf, ansible_python_interpreter: /usr/bin/python3 }
+      - { role: rh_dev, ansible_python_interpreter: /usr/bin/python3 }
