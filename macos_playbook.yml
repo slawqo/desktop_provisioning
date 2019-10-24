@@ -3,5 +3,6 @@
   roles:
       - { role: base_configs }
       - { role: desktop_configs }
+      - { role: macos_desktop }
       # This is used here only to provide propder krb5.conf file
       - { role: rh_dev }
