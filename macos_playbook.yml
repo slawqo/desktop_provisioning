@@ -1,5 +1,7 @@
 ---
 - hosts: all
+  vars:
+      tmux_config: "fancy"
   roles:
       - { role: base_configs }
       - { role: desktop_configs }
