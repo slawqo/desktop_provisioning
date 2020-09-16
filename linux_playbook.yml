@@ -1,10 +1,12 @@
 ---
 - hosts: all
+  vars:
+      tmux_config: "fancy"
   roles:
       - { role: linux_desktop, ansible_python_interpreter: /usr/bin/python3 }
       - { role: vagrant, ansible_python_interpreter: /usr/bin/python3 }
+      - { role: libvirt, ansible_python_interpreter: /usr/bin/python3 }
       - { role: base_configs }
       - { role: desktop_configs }
       - { role: linux_configs }
       - { role: fzf, ansible_python_interpreter: /usr/bin/python3 }
-      - { role: rh_dev, ansible_python_interpreter: /usr/bin/python3 }
