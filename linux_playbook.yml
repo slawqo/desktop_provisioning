@@ -2,7 +2,7 @@
 - hosts: all
   vars:
       tmux_config: "fancy"
-      desktop_type: "kde"
+      desktop_type: "i3"
   roles:
       - { role: linux_desktop, ansible_python_interpreter: /usr/bin/python3 }
       - { role: vagrant, ansible_python_interpreter: /usr/bin/python3 }
