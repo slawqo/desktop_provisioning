@@ -8,9 +8,8 @@
       - { role: libvirt, ansible_python_interpreter: /usr/bin/python3 }
       - { role: base_configs }
       - { role: desktop_configs }
-      - { role: linux_configs }
       - { role: i3wm, ansible_python_interpreter: /usr/bin/python3 }
       - { role: ansible }
       - { role: podman }
-      - { role: rh_dev }
+      - { role: rh_dev, when: ansible_distribution == 'Fedora' }
       - { role: fzf, ansible_python_interpreter: /usr/bin/python3 }
