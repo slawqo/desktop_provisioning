@@ -9,6 +9,7 @@
       - { role: base_configs }
       - { role: desktop_configs }
       - { role: i3wm, ansible_python_interpreter: /usr/bin/python3 }
+      - { role: mail_cli_tools, ansible_python_interpreter: /usr/bin/python3 }
       - { role: ansible }
       - { role: podman }
       - { role: rh_dev, when: ansible_distribution == 'Fedora' }
