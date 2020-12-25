@@ -2,6 +2,9 @@
 - hosts: all
   vars:
       tmux_config: "fancy"
+      # I want to have tmux spawned always when new terminal window is opened
+      # on the desktop
+      use_tmux_always: true
   roles:
       - { role: linux_desktop, ansible_python_interpreter: /usr/bin/python3 }
       - { role: vagrant, ansible_python_interpreter: /usr/bin/python3 }
